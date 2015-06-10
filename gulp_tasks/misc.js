@@ -21,13 +21,13 @@ var options = minimist(process.argv.slice(2), {
 // Task
 gulp.task('misc', function() {
 
-  return gulp.src('./source/misc/' + options.env + '/**/*', {
+  return gulp.src('./source/misc/**/*', {
       dot: true
     })
 
     // Copy miscellaneous files
     .pipe(copy('./build/', {
-      prefix: 3
+      prefix: 2
     }));
 
 });
