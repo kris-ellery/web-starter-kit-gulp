@@ -1,0 +1,38 @@
+//
+// Settings
+// --------------------------------------------------
+
+@import "settings/variables";
+@import "settings/functions";
+@import "settings/mixins";
+
+//
+// Core
+// --------------------------------------------------
+
+@import "core/reset";
+@import "core/base";
+
+//
+// Objects
+// --------------------------------------------------
+
+@import "objects/sample";
+
+//
+// Utilities
+// --------------------------------------------------
+
+@import "utilities/sample";
+
+//
+// Components
+// --------------------------------------------------
+
+@import "components/sample";
+
+//
+// Themes
+// --------------------------------------------------
+
+@import "themes/sample";

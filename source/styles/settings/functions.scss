@@ -1,0 +1,16 @@
+////
+/// Global functions
+/// @group Globals
+/// @author Kris Olszewski
+////
+
+/// Get brekpoint from a nested list of breakpoints
+/// ---
+/// @require {variable} $breakpoints - Breakpoints map
+/// @param {String} $orientation - `horizontal` or `vertical`
+/// @param {String} $breakpoint - Breakpoint
+/// @return {Number} Breakpoint value
+
+@function get-breakpoint($orientation, $breakpoint) {
+  @return map-get(map-get($breakpoints, $orientation), $breakpoint);
+}

@@ -1,0 +1,52 @@
+{
+  "name": "web-starter-kit-gulp",
+  "title": "Web Starter Kit Gulp",
+  "description": "Web Starter Kit Gulp",
+  "version": "0.0.1",
+  "homepage": "http://www.domain.com",
+  "author": {
+    "name": "Company",
+    "url": "http://www.domain.com"
+  },
+  "contributors": [
+    {
+      "name": "Name",
+      "email": "alias@domain.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:USER/REPOSITORY.git"
+  },
+  "devDependencies": {
+    "browser-sync": "*",
+    "del": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-combine-mq": "*",
+    "gulp-concat": "*",
+    "gulp-copy": "*",
+    "gulp-csscomb": "*",
+    "gulp-header": "*",
+    "gulp-htmlhint": "*",
+    "gulp-imagemin": "*",
+    "gulp-jade": "*",
+    "gulp-jscs": "*",
+    "gulp-jshint": "*",
+    "gulp-minify-css": "*",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "*",
+    "gulp-replace": "*",
+    "gulp-sass": "*",
+    "gulp-scss-lint": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "^3.0.5",
+    "gulp-watch": "*",
+    "imagemin-pngquant": "*",
+    "jshint-stylish": "*",
+    "minimist": "*",
+    "moment": "*",
+    "require-dir": "*",
+    "run-sequence": "*"
+  }
+}

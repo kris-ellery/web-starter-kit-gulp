@@ -1,0 +1,28 @@
+/**
+ * Component: Sample
+ * --------------------------------------------------
+ */
+
+.c-sample {
+  position: relative;
+}
+
+/**
+ * Component: Sample
+ * Modifier: Fixed
+ * --------------------------------------------------
+ */
+
+.c-sample--fixed {
+  position: fixed;
+}
+
+/**
+ * Component: Sample
+ * Hack: Had to add massive `z-index`
+ * --------------------------------------------------
+ */
+
+._c-sample {
+  z-index: 10000;
+}
