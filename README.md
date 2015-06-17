@@ -1,6 +1,6 @@
 # Web Starter Kit
 
-Web Starter Kit is an opinionated build automation for front-end web development based on [Gulp](http://gulpjs.com/), [Node](https://nodejs.org/), and [NPM](https://www.npmjs.com/).
+Web Starter Kit is an opinionated build automation for front-end web development based on [Gulp](http://gulpjs.com/), [Node](https://nodejs.org/), [NPM](https://www.npmjs.com/), [Sass](http://sass-lang.com/), and [Jade](http://jade-lang.com/).
 
 **Key features**
 
@@ -224,7 +224,7 @@ Run: `gulp views`
 
 ### Structure
 
-This project follows an opinionated directory structure. To learn more about [Jade](http://jade-lang.com/) go to [http://www.learnjade.com/](http://www.learnjade.com/) and [http://naltatis.github.io/jade-syntax-docs/](http://naltatis.github.io/jade-syntax-docs/).
+This project follows an opinionated directory structure. To learn more about Jade go to [http://www.learnjade.com/](http://www.learnjade.com/) and [http://naltatis.github.io/jade-syntax-docs/](http://naltatis.github.io/jade-syntax-docs/).
 
 ### Style Guide
 
