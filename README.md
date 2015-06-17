@@ -1,5 +1,7 @@
 # Web Starter Kit
 
+![Alt text](http://www.kolszewski.com/images/vendors.png)
+
 Web Starter Kit is an opinionated build automation for front-end web development based on [Gulp](http://gulpjs.com/), [Node](https://nodejs.org/), [NPM](https://www.npmjs.com/), [Sass](http://sass-lang.com/), and [Jade](http://jade-lang.com/).
 
 **Key features**
