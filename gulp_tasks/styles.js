@@ -7,6 +7,7 @@
 
 // Dependencies
 var gulp         = require('gulp');
+var runSequence  = require('run-sequence');
 var rename       = require('gulp-rename');
 var header       = require('gulp-header');
 var moment       = require('moment');
@@ -20,14 +21,30 @@ var pkg          = require('../package.json');
 var banner       = '/*! <%= pkg.title %> | <%= moment().format("MMMM Do YYYY, h:mm:ss A") %> */\n';
 
 // Task
-gulp.task('styles', function() {
+gulp.task('styles', function(cb) {
 
-  gulp.src('./source/styles/**/*.scss')
+  // Run tasks synchronously
+  return runSequence(
+    [ 'styles-lint' ],
+    [ 'styles-build' ],
+    cb
+  );
+});
+
+// Lint Sass
+gulp.task('styles-lint', function() {
+
+  return gulp.src('./source/styles/**/*.scss')
 
     // Lint Sass
     .pipe(scsslint({
-      config: '.scss-lint.yml'
+      config: './gulp_tasks/_sass-lint.yml'
     }));
+
+});
+
+// Build styles
+gulp.task('styles-build', function() {
 
   return gulp.src('./source/styles/*.scss')
 
@@ -45,7 +62,9 @@ gulp.task('styles', function() {
     }))
 
     // Comb CSS
-    .pipe(csscomb())
+    .pipe(csscomb({
+      configPath: './gulp_tasks/_css-comb.json'
+    }))
 
     // Add banner
     .pipe(header(banner, {

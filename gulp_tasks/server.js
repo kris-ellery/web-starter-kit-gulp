@@ -43,10 +43,10 @@ gulp.task('server', function() {
   gulp.watch('./source/images/**/*', [ 'images' ]);
   gulp.watch('./source/media/**/*', [ 'media' ]);
   gulp.watch('./source/misc/**/*', [ 'misc' ]);
-  gulp.watch('./source/scripts/**/*', [ 'scripts' ]);
-  gulp.watch('./source/styles/**/*', [ 'styles' ]);
+  gulp.watch('./source/scripts/**/*.js', [ 'scripts' ]);
+  gulp.watch('./source/styles/**/*.scss', [ 'styles' ]);
   gulp.watch('./source/vendors/**/*', [ 'vendors' ]);
-  gulp.watch('./source/views/**/*', [ 'views' ]);
+  gulp.watch('./source/views/**/*.jade', [ 'views' ]);
 
   // Reload BrowserSync when build updates
   gulp.watch([ './build/**/*.*', '!./build/docs/**/*.*' ], function(file) {

@@ -24,6 +24,7 @@ gulp.task('views', function() {
 
   return gulp.src('./source/views/site/**/*.jade')
 
+    // Jade compilation
     .pipe(jade({
       pretty: true,
       data: {
@@ -32,7 +33,9 @@ gulp.task('views', function() {
     }))
 
     // Lint HTML
-    .pipe(htmlhint())
+    .pipe(htmlhint({
+      htmlhintrc: './gulp_tasks/_html-lint.json'
+    }))
     .pipe(htmlhint.reporter())
 
     // Save optimized HTML

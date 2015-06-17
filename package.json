@@ -1,52 +1,58 @@
 {
-  "name": "web-starter-kit-gulp",
-  "title": "Web Starter Kit Gulp",
-  "description": "Web Starter Kit Gulp",
+  "name": "web-starter-kit",
+  "title": "Web starter Kit",
+  "description": "Web Starter Kit",
   "version": "0.0.1",
   "homepage": "http://www.domain.com",
   "author": {
     "name": "Company",
-    "url": "http://www.domain.com"
+    "url": "http://www.company.com"
   },
   "contributors": [
     {
       "name": "Name",
-      "email": "alias@domain.com"
+      "email": "alias@company.com"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:USER/REPOSITORY.git"
+    "url": "git@github.com:USER/REPOSITORY.git"
   },
   "devDependencies": {
-    "browser-sync": "*",
-    "del": "*",
-    "gulp": "*",
-    "gulp-autoprefixer": "*",
-    "gulp-combine-mq": "*",
-    "gulp-concat": "*",
-    "gulp-copy": "*",
-    "gulp-csscomb": "*",
-    "gulp-header": "*",
-    "gulp-htmlhint": "*",
-    "gulp-imagemin": "*",
-    "gulp-jade": "*",
-    "gulp-jscs": "*",
-    "gulp-jshint": "*",
-    "gulp-minify-css": "*",
+    "browser-sync": "^2.7.12",
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-accessibility": "^1.1.2",
+    "gulp-autoprefixer": "^2.3.0",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-copy": "0.0.2",
+    "gulp-csscomb": "^3.0.3",
+    "gulp-header": "^1.2.2",
+    "gulp-htmlhint": "^0.1.1",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-include": "^1.1.1",
+    "gulp-jade": "^1.0.1",
+    "gulp-jscs": "^1.6.0",
+    "gulp-jshint": "^1.11.0",
+    "gulp-minify-css": "^1.1.5",
     "gulp-plumber": "^1.0.1",
-    "gulp-rename": "*",
-    "gulp-replace": "*",
-    "gulp-sass": "*",
-    "gulp-scss-lint": "*",
-    "gulp-uglify": "*",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.3",
+    "gulp-sass": "^2.0.1",
+    "gulp-scss-lint": "^0.2.0",
+    "gulp-shell": "^0.4.2",
+    "gulp-uglify": "^1.2.0",
     "gulp-util": "^3.0.5",
-    "gulp-watch": "*",
-    "imagemin-pngquant": "*",
-    "jshint-stylish": "*",
-    "minimist": "*",
-    "moment": "*",
-    "require-dir": "*",
-    "run-sequence": "*"
+    "gulp-watch": "^4.2.4",
+    "imagemin-pngquant": "^4.1.0",
+    "jsdoc": "^3.3.0",
+    "jshint-stylish": "^2.0.0",
+    "minami": "^1.1.0",
+    "minimist": "^1.1.1",
+    "moment": "^2.10.3",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.0",
+    "sassdoc": "^2.1.13",
+    "sassdoc-theme-neat": "0.0.2"
   }
 }

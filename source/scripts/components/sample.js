@@ -72,7 +72,7 @@
 
     } // myResizeHandler()
 
-  }; // MyClass
+  }; // MyNamespace
 
   MyNamespace.init();
 

@@ -1,28 +1,36 @@
 /**
- * Component: Sample
+ * Component: {component}
  * --------------------------------------------------
  */
 
-.c-sample {
-  position: relative;
+.c-block {
+  display: block;
+
+  &__element {
+    display: inline-block;
+  }
 }
 
 /**
- * Component: Sample
- * Modifier: Fixed
+ * Component: {component}
+ * Hack: {description}
  * --------------------------------------------------
  */
 
-.c-sample--fixed {
-  position: fixed;
+._c-block {
+  display: inline-block;
 }
 
 /**
- * Component: Sample
- * Hack: Had to add massive `z-index`
+ * Component: {component}
+ * Modifier: {modifier}
  * --------------------------------------------------
  */
 
-._c-sample {
-  z-index: 10000;
+.c-block--modifier {
+  display: inline;
+
+  &__element {
+    display: inline;
+  }
 }

@@ -7,22 +7,20 @@
 
 // Dependencies
 var gulp        = require('gulp');
+var del         = require('del');
 var runSequence = require('run-sequence');
 
 // Task
 gulp.task('build', function(cb) {
 
+  // Remove build
+  del('./build/');
+
   // Run tasks synchronously
   return runSequence(
-    [ 'clean' ],
-    [ 'data' ],
-    [ 'fonts' ],
-    [ 'images' ],
-    [ 'media' ],
-    [ 'misc' ],
+    [ 'assets' ],
     [ 'scripts' ],
     [ 'styles' ],
-    [ 'vendors' ],
     [ 'views' ],
     cb
   );
