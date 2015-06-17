@@ -2,14 +2,6 @@
 ### Development Environment Settings
 ### --------------------------------------------------
 
-### ALLOW PRIVATE NETWORK USERS ONLY BY IP
-order deny,allow
-deny from all
-allow from 10.
-allow from 172.16.
-allow from 192.168.
-allow from 127.0.
-
 ### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 ### --------------------------------------------------
