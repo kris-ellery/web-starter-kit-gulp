@@ -220,7 +220,6 @@ This task will perform a series of sub-tasks to generate final HTML files.
 * Select Jade files from `./source/views/site`
 * Compile Jade to HTML
 * Check for HTML errors
-* Check for accessibility errors
 
 Run: `gulp views`
 
