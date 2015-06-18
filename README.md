@@ -32,10 +32,10 @@ Web Starter Kit is an opinionated build automation for front-end web development
 * Assets
     * Data
     * Fonts
+    * Images
     * Media
     * Miscellaneous
     * Vendors
-* Images
 * Scripts
     * Style Guide
 * Styles
@@ -130,6 +130,12 @@ This task will copy font files to `./build/fonts`.
 
 Run: `gulp fonts`
 
+## Images
+
+This task will optimize and copy images to `./build/images`.
+
+Run: `gulp images`
+
 ### Media
 
 This task will copy media files to `./build/media`.
@@ -147,14 +153,6 @@ Run: `gulp misc`
 This task will copy vendor files to `./build/vendors`.
 
 Run: `gulp vendors`
-
----
-
-## Images
-
-This task will optimize and copy images to `./build/images`.
-
-Run: `gulp images`
 
 ---
 
