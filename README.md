@@ -1,4 +1,4 @@
-# Web Starter Kit
+# Web Starter Kit with Gulp
 
 ![Alt text](http://www.kolszewski.com/images/vendors.png)
 
