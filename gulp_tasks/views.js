@@ -9,7 +9,7 @@
 var gulp     = require('gulp');
 var minimist = require('minimist')
 var jade     = require('gulp-jade');
-var htmlhint = require("gulp-htmlhint");
+var htmlhint = require('gulp-htmlhint');
 
 // Build options
 var options = minimist(process.argv.slice(2), {

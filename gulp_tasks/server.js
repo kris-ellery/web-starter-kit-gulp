@@ -38,18 +38,18 @@ gulp.task('server', function() {
   });
 
   // Watch for file changes
-  gulp.watch('./source/data/**/*', [ 'data' ]);
-  gulp.watch('./source/fonts/**/*', [ 'fonts' ]);
-  gulp.watch('./source/images/**/*', [ 'images' ]);
-  gulp.watch('./source/media/**/*', [ 'media' ]);
-  gulp.watch('./source/misc/**/*', [ 'misc' ]);
-  gulp.watch('./source/scripts/**/*.js', [ 'scripts' ]);
-  gulp.watch('./source/styles/**/*.scss', [ 'styles' ]);
-  gulp.watch('./source/vendors/**/*', [ 'vendors' ]);
-  gulp.watch('./source/views/**/*.jade', [ 'views' ]);
+  gulp.watch('source/data/**/*', [ 'data' ]);
+  gulp.watch('source/fonts/**/*', [ 'fonts' ]);
+  gulp.watch('source/images/**/*', [ 'images' ]);
+  gulp.watch('source/media/**/*', [ 'media' ]);
+  gulp.watch('source/misc/**/*', [ 'misc' ]);
+  gulp.watch('source/scripts/**/*', [ 'scripts' ]);
+  gulp.watch('source/styles/**/*', [ 'styles' ]);
+  gulp.watch('source/vendors/**/*', [ 'vendors' ]);
+  gulp.watch('source/views/**/*', [ 'views' ]);
 
   // Reload BrowserSync when build updates
-  gulp.watch([ './build/**/*.*', '!./build/docs/**/*.*' ], function(file) {
+  gulp.watch([ 'build/**/*', '!build/docs/**/*' ], function(file) {
     browserSync.reload(path.relative(__dirname, file.path));
   });
 

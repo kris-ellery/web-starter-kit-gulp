@@ -223,7 +223,7 @@ Run: `gulp views`
 
 ### Structure
 
-This project follows an opinionated directory structure. To learn more about Jade go to [http://www.learnjade.com/](http://www.learnjade.com/) and [http://naltatis.github.io/jade-syntax-docs/](http://naltatis.github.io/jade-syntax-docs/).
+This project follows an opinionated directory structure. To learn more about Jade go to [http://jade-lang.com/reference/](http://jade-lang.com/reference/) and [http://naltatis.github.io/jade-syntax-docs/](http://naltatis.github.io/jade-syntax-docs/).
 
 ### Style Guide
 
