@@ -17,17 +17,20 @@ var runSequence = require('run-sequence');
 // Task
 gulp.task('docs', function(cb) {
 
-  // Remove docs
-  del('./build/docs/');
-
   // Run tasks synchronously
   return runSequence(
+    [ 'remove-docs' ],
     [ 'sassdoc' ],
     [ 'jsdoc' ],
     [ 'update-sassdoc-logo' ],
     [ 'update-sassdoc-nav' ],
     cb
   );
+});
+
+// Remove documentation
+gulp.task('remove-docs', function() {
+  return del('./build/docs/');
 });
 
 // Sass documentation
