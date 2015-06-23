@@ -10,7 +10,6 @@ var gulp        = require('gulp');
 var minimist    = require('minimist')
 var copy        = require('gulp-copy');
 var imagemin    = require('gulp-imagemin');
-var pngquant    = require('imagemin-pngquant');
 var runSequence = require('run-sequence');
 
 // Build options
@@ -67,14 +66,11 @@ gulp.task('images', function () {
 
     // Optimize images
     .pipe(imagemin({
-      optimizationLevel: 4,
+      optimizationLevel: 3,
       progressive: true,
       svgoPlugins: [{
         removeViewBox: false
-      }],
-      use: [
-        pngquant()
-      ]
+      }]
     }))
 
     // Save optimized images
