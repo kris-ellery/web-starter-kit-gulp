@@ -14,39 +14,35 @@ Web Starter Kit is an opinionated build automation for front-end web development
 
 *Note: Web Starter Kit is an opinionated guideline and it doesn't solve everything. It is up to you to modify whatever necessary to achieve project's end goal.*
 
----
-
 ## Table of Contents
 
-* Dependencies
-* Build
-    * Environments
-        * Development
-        * Stage
-        * Production
-* Server
-    * URLs
-    * Options
-* Documentation
-    * URLs
-* Assets
-    * Data
-    * Fonts
-    * Images
-    * Media
-    * Miscellaneous
-    * Vendors
-* Scripts
-    * Style Guide
-* Styles
-    * Structure
-    * Style Guide
-* Views
-    * Structure
-    * Style Guide
-    * Environments
-
----
+1. [Dependencies](#dependencies)
+1. [Build](#build)
+    1. [Environments](#environments)
+        1. [Development](#development)
+        1. [Stage](#stage)
+        1. [Production](#production)
+1. [Server](#server)
+    1. [Local URLs](#local-urls)
+    1. [Options](#options)
+1. [Documentation](#documentation)
+    1. [URLs](#urls)
+1. [Assets](#assets)
+    1. [Data](#data)
+    1. [Fonts](#fonts)
+    1. [Images](#images)
+    1. [Media](#media)
+    1. [Miscellaneous](#miscellaneous)
+    1. [Vendors](#vendors)
+1. [Scripts](#scripts)
+    1. [JavaScript Style Guide](#javascript-style-guide)
+1. [Styles](#styles)
+    1. [BEM Structure](#bem-structure)
+    1. [Sass Style Guide](#sass-style-guide)
+1. [Views](#views)
+    1. [Jade Structure](#jade-structure)
+    1. [HTML Style Guide](#html-style-guide)
+    1. [Environment Variables](#environment-variables)
 
 ## Dependencies
 
@@ -54,7 +50,7 @@ Run: `npm cache clear && npm i`
 
 *Note: Before you can install Web Start Kit dependencies, you will need to install [Gulp](http://gulpjs.com/), [Node](https://nodejs.org/), and [NPM](https://www.npmjs.com/).*
 
----
+[back to top](#table-of-contents)
 
 ## Build
 
@@ -78,7 +74,7 @@ Run: `gulp build --env=stage`
 
 Run: `gulp build --env=prod`
 
----
+[back to top](#table-of-contents)
 
 ## Server
 
@@ -86,7 +82,7 @@ You can start a local server to view your project and documentation. Additionall
 
 Run: `gulp server`
 
-### URLs
+### Local URLs
 
 * Local - http://localhost:8000
 * UI - http://localhost:3001
@@ -95,7 +91,7 @@ Run: `gulp server`
 
 You can modify port, proxy, and many other settings in `./gulp_tasks/server.js`. For more information about BrowserSync go to [http://www.browsersync.io/](http://www.browsersync.io/).
 
----
+[back to top](#table-of-contents)
 
 ## Documentation
 
@@ -110,7 +106,7 @@ You have to have a running sever in order to view documentation.
 * Sass - `http://localhost:8000/docs/sass`
 * JavaScript - `http://localhost:8000/docs/js`
 
----
+[back to top](#table-of-contents)
 
 ## Assets
 
@@ -130,7 +126,7 @@ This task will copy font files to `./build/fonts`.
 
 Run: `gulp fonts`
 
-## Images
+### Images
 
 This task will optimize and copy images to `./build/images`.
 
@@ -154,7 +150,7 @@ This task will copy vendor files to `./build/vendors`.
 
 Run: `gulp vendors`
 
----
+[back to top](#table-of-contents)
 
 ## Scripts
 
@@ -173,11 +169,11 @@ This task will perform a series of sub-tasks to generate final JavaScript files.
 
 Run: `gulp scripts`
 
-## Style Guide
+## JavaScript Style Guide
 
 Your JavaScript should adhere to most reasonable, yet opinionated, style guide. If you choose to ignore it, you can override settings in `./gulp_tasks/_js-guide.json` and `./gulp_tasks/_js-lint.json`. To learn more about JavaScript style guide go to [https://github.com/airbnb/javascript/tree/master/es5](https://github.com/airbnb/javascript/tree/master/es5).
 
----
+[back to top](#table-of-contents)
 
 ## Styles
 
@@ -199,17 +195,17 @@ This task will perform a series of sub-tasks to generate final CSS files.
 
 Run: `gulp styles`
 
-### Structure
+### BEM Structure
 
 This project follows a strict naming convention using [BEM](https://en.bem.info/) methodology.
 
 Directory structure and selector names are divided into namespaces based on [More Transparent UI Code with Namespaces](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) article by Harry Roberts.
 
-### Style Guide
+### Sass Style Guide
 
 Your Sass should adhere to most reasonable, yet opinionated, style guide. If you choose to ignore it, you can override settings in `./gulp_tasks/_sass-lint.yml`.
 
----
+[back to top](#table-of-contents)
 
 ## Views
 
@@ -221,14 +217,16 @@ This task will perform a series of sub-tasks to generate final HTML files.
 
 Run: `gulp views`
 
-### Structure
+### Jade Structure
 
 This project follows an opinionated directory structure. To learn more about Jade go to [http://jade-lang.com/reference/](http://jade-lang.com/reference/) and [http://naltatis.github.io/jade-syntax-docs/](http://naltatis.github.io/jade-syntax-docs/).
 
-### Style Guide
+### HTML Style Guide
 
 Your HTML should adhere to most reasonable, yet opinionated, style guide. If you choose to ignore it, you can override settings in `./gulp_tasks/_html-lint.json`.
 
-### Environments
+### Environment Variables
 
 Every Jade file has access to global `env` variable. You can use it to conditionally load unminified/minified assets. See `./source/views/includes/head.jade` as an example.
+
+[back to top](#table-of-contents)
