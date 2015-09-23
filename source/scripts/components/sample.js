@@ -70,7 +70,7 @@
 
     _myResizeHandler: function() {
 
-    } // _myResizeHandler()
+    }, // _myResizeHandler()
 
   }; // MyNamespace
 

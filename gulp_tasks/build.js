@@ -13,16 +13,16 @@ var runSequence = require('run-sequence');
 // Task
 gulp.task('build', function(cb) {
 
-  // Remove build
-  del('./build');
-
   // Run tasks synchronously
   return runSequence(
-    [ 'remove-build' ],
     [ 'assets' ],
     [ 'scripts' ],
     [ 'styles' ],
     [ 'views' ],
     cb
   );
+});
+
+gulp.task('remove-build', function() {
+  return del('./build');
 });
