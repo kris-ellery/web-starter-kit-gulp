@@ -44,7 +44,7 @@ gulp.task('scripts', function() {
     }))
 
     // Save uncompressed JS
-    .pipe(gulp.dest('./build/scripts/'))
+    .pipe(gulp.dest('./build/scripts'))
 
     // Minify JS
     .pipe(uglify({
@@ -57,5 +57,5 @@ gulp.task('scripts', function() {
     }))
 
     // Save compressed JS
-    .pipe(gulp.dest('./build/scripts/'));
+    .pipe(gulp.dest('./build/scripts'));
 });

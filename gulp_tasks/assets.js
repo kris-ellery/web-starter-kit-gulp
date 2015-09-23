@@ -11,13 +11,12 @@ var minimist    = require('minimist')
 var copy        = require('gulp-copy');
 var imagemin    = require('gulp-imagemin');
 var runSequence = require('run-sequence');
+var changed     = require('gulp-changed');
 
 // Build options
 var options = minimist(process.argv.slice(2), {
   string: [ 'env' ],
-  default: {
-    env: 'dev'
-  }
+  default: { env: 'dev' }
 });
 
 // Task
@@ -37,84 +36,51 @@ gulp.task('assets', function(cb) {
 
 // Data
 gulp.task('data', function() {
-
   return gulp.src('./source/data/**/*')
-
-    // Copy data
-    .pipe(copy('./build/', {
-      prefix: 1
-    }));
-
+    .pipe(changed('./build/data'))
+    .pipe(gulp.dest('./build/data'));
 });
 
 // Fonts
 gulp.task('fonts', function() {
-
   return gulp.src('./source/fonts/**/*')
-
-    // Copy fonts
-    .pipe(copy('./build/', {
-      prefix: 1
-    }));
-
+    .pipe(changed('./build/fonts'))
+    .pipe(gulp.dest('./build/fonts'));
 });
 
 // Images
 gulp.task('images', function () {
-
   return gulp.src('./source/images/**/*')
-
-    // Optimize images
+    .pipe(changed('./build/images'))
     .pipe(imagemin({
       optimizationLevel: 3,
       progressive: true,
-      svgoPlugins: [{
-        removeViewBox: false
-      }]
+      svgoPlugins: [{ removeViewBox: false }]
     }))
-
-    // Save optimized images
-    .pipe(gulp.dest('./build/images/'));
+    .pipe(gulp.dest('./build/images'));
 
 });
 
 // Media
 gulp.task('media', function() {
-
   return gulp.src('./source/media/**/*')
-
-    // Copy media
-    .pipe(copy('./build/', {
-      prefix: 1
-    }));
-
+    .pipe(changed('./build/media'))
+    .pipe(gulp.dest('./build/media'));
 });
 
 // Misc
 gulp.task('misc', function() {
-
   return gulp.src([
       './source/misc/' + options.env + '/**/*',
       './source/misc/all/**/*'
-    ], {
-      dot: true
-    })
-
-    // Copy miscellaneous files
-    .pipe(copy('./build/', {
-      prefix: 3
-    }));
-
+    ], { dot: true })
+    .pipe(changed('./build'))
+    .pipe(gulp.dest('./build'));
 });
 
 // Vendors
 gulp.task('vendors', function() {
-
   return gulp.src('./source/vendors/**/*')
-
-  // Copy vendors
-    .pipe(copy('./build/', {
-      prefix: 1
-    }));
-
+    .pipe(changed('./build/vendors'))
+    .pipe(gulp.dest('./build/vendors'));
 });

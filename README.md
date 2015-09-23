@@ -84,8 +84,8 @@ Run: `gulp server`
 
 ### Local URLs
 
-* Local - http://localhost:8000
-* UI - http://localhost:3001
+* Local - http://localhost:3000
+* UI - Set to `false` by default
 
 ### Options
 

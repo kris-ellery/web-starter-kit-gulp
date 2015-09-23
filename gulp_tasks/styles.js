@@ -73,7 +73,7 @@ gulp.task('styles-build', function() {
     }))
 
     // Save expanded CSS
-    .pipe(gulp.dest('./build/styles/'))
+    .pipe(gulp.dest('./build/styles'))
 
     // Combine Media Queries
     .pipe(combineMq())
@@ -92,6 +92,6 @@ gulp.task('styles-build', function() {
     }))
 
     // Save compressed CSS
-    .pipe(gulp.dest('./build/styles/'));
+    .pipe(gulp.dest('./build/styles'));
 
 });

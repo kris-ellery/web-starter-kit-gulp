@@ -19,8 +19,8 @@
 
     init: function() {
 
-      this.cache();
-      this.bind();
+      this._cache();
+      this._events();
 
     }, // init()
 
@@ -30,12 +30,12 @@
      * @memberof MyNamespace
      */
 
-    cache: function() {
+    _cache: function() {
 
       this.$win = $(window);
       this.$html = $('html');
 
-    }, // cache()
+    }, // _cache()
 
     /**
      * Attach event listeners
@@ -43,14 +43,14 @@
      * @memberof MyNamespace
      */
 
-    bind: function() {
+    _events: function() {
 
       var _this = this;
 
-      _this.$html.on('click.ui.some_namespace', '.js-trigger', _this.myClickHandler);
-      _this.$win.on('resize.ui.some_namespace', _this.myResizeHandler);
+      _this.$html.on('click.ui.some_namespace', '.js-trigger', _this._myClickHandler);
+      _this.$win.on('resize.ui.some_namespace', _this._myResizeHandler);
 
-    }, // bind()
+    }, // _events()
 
     /**
      * Handle click event
@@ -58,9 +58,9 @@
      * @memberof MyNamespace
      */
 
-    myClickHandler: function() {
+    _myClickHandler: function() {
 
-    }, // myClickHandler()
+    }, // _myClickHandler()
 
     /**
      * Handle `window` resize event
@@ -68,9 +68,9 @@
      * @memberof MyNamespace
      */
 
-    myResizeHandler: function() {
+    _myResizeHandler: function() {
 
-    } // myResizeHandler()
+    } // _myResizeHandler()
 
   }; // MyNamespace
 
