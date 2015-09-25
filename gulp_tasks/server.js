@@ -28,8 +28,8 @@ gulp.task('server', function() {
   gulp.watch('./source/images/**/*', [ 'images' ]);
   gulp.watch('./source/media/**/*', [ 'media' ]);
   gulp.watch('./source/misc/**/*', [ 'misc' ]);
-  gulp.watch('./source/scripts/**/*.', [ 'scripts' ]);
-  gulp.watch('./source/styles/**/*.', [ 'styles' ]);
+  gulp.watch('./source/scripts/**/*', [ 'scripts' ]);
+  gulp.watch('./source/styles/**/*', [ 'styles' ]);
   gulp.watch('./source/vendors/**/*', [ 'vendors' ]);
   gulp.watch('./source/views/**/*', [ 'views' ]);
 
