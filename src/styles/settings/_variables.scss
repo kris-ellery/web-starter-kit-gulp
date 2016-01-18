@@ -1,0 +1,49 @@
+////
+/// Global variables
+/// @group Globals
+/// @author Kris Olszewski
+////
+
+/// Horizontal and vertical breakpoints map
+/// ---
+/// @type Map
+/// ---
+/// @prop {Map} horizontal - Horizontal breakpoints
+/// @prop {Number} horizontal.xs [450px] - Tiny
+/// @prop {Number} horizontal.sm [600px] - Small
+/// @prop {Number} horizontal.md [750px] - Medium
+/// @prop {Number} horizontal.lg [900px] - Large
+/// @prop {Number} horizontal.xl [1050px] - Huge
+/// @prop {Map} vertical - Vertical breakpoints
+/// @prop {Number} vertical.xs [300px] - Tiny
+/// @prop {Number} vertical.sm [450px] - Small
+/// @prop {Number} vertical.md [600px] - Medium
+/// @prop {Number} vertical.lg [750px] - Large
+/// @prop {Number} vertical.xl [900px] - Huge
+
+$breakpoints: (
+  "horizontal": (
+    "xs": 400px,
+    "sm": 500px,
+    "md": 700px,
+    "lg": 900px,
+    "xl": 1050px
+  ),
+  "vertical": (
+    "xs": 300px,
+    "sm": 450px,
+    "md": 600px,
+    "lg": 750px,
+    "xl": 900px
+  )
+);
+
+/// Colors map
+/// ---
+/// @type Map
+/// ---
+/// @prop {String} colors.red [#e32118] - Red
+
+$colors: (
+  "red": #e32118,
+);

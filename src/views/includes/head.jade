@@ -1,0 +1,12 @@
+meta(charset="utf-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+title #{title}
+meta(name="description", content="#{description}")
+//- CSS
+case env
+  when "dev"
+    link(href="/styles/main.css", rel="stylesheet")
+  when "stage"
+  when "prod"
+    link(href="/styles/main.min.css", rel="stylesheet")

@@ -1,0 +1,6 @@
+{
+  "name": "web-starter-kit",
+  "dependencies": {
+    "jquery": "~2.2.0"
+  }
+}
