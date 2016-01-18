@@ -4,7 +4,7 @@
 
 Web Starter Kit is an opinionated build automation for front-end web development based on [Gulp](http://gulpjs.com/), [Node](https://nodejs.org/), [NPM](https://www.npmjs.com/), [Bower](http://bower.io/), [Babel](https://babeljs.io/), [Sass](http://sass-lang.com/), and [Jade](http://jade-lang.com/).
 
-*Note: Web Starter Kit is an opinionated guideline and it doesn't solve everything. It is up to you to modify whatever necessary to achieve project goals.*
+*Note: Web Starter Kit is simply a guideline and it doesn't solve everything. It is up to you to modify whatever necessary to achieve your project goals.*
 
 ## Table of Contents
 
@@ -100,7 +100,7 @@ Run: `gulp fonts`
 
 ### Images
 
-Optimize and copy images to `./build/images`.
+Copy images to `./build/images`. As a personal preference Web Starter Kit doesn't use automated image optimization. It is strongly recommended to use services like [TinyPNG](https://tinypng.com/) and [TinyJPG](https://tinyjpg.com/) to optimize images manually.
 
 Run: `gulp images`
 
@@ -126,7 +126,7 @@ Run: `gulp vendors`
 
 ## Scripts
 
-This task will perform a series of sub-tasks to generate final JavaScript files. See `./gulpfile.babel.js` for reference.
+Run a series of sub-tasks to generate final JavaScript files. See `./gulpfile.babel.js` for reference.
 
 *Note: Each file on the root of `./src/scripts` will be compiled to its own file in `./build/scripts`. Each file can have own includes, just like Sass with `@import` functionality. See `./src/scripts/main.js` as an example.*
 
@@ -136,7 +136,7 @@ Run: `gulp scripts`
 
 ## Styles
 
-This task will perform a series of sub-tasks to generate final CSS files. See `./gulpfile.babel.js` for reference.
+Run a series of sub-tasks to generate final CSS files. See `./gulpfile.babel.js` for reference.
 
 *Note: Each file on the root of `./src/styles` will be compiled to its own file in `./build/styles`.*
 
@@ -144,19 +144,19 @@ Run: `gulp styles`
 
 ### BEM Structure
 
-This project follows a strict naming convention using [BEM](https://en.bem.info/) methodology.
+Web Starter Kit follows a strict naming convention using [BEM](https://en.bem.info/) methodology.
 
 Directory structure and selector names are divided into namespaces based on [More Transparent UI Code with Namespaces](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) article by Harry Roberts.
 
 ## Views
 
-This task will perform a series of sub-tasks to generate final HTML files. See `./gulpfile.babel.js` for reference.
+Run a series of sub-tasks to generate final HTML files. See `./gulpfile.babel.js` for reference.
 
 Run: `gulp views`
 
 ### Jade Structure
 
-This project follows an opinionated directory structure. To learn more about Jade go to [http://jade-lang.com/reference/](http://jade-lang.com/reference/) and [http://naltatis.github.io/jade-syntax-docs/](http://naltatis.github.io/jade-syntax-docs/).
+Web Starter Kit follows an opinionated directory structure. To learn more about Jade go to [http://jade-lang.com/reference/](http://jade-lang.com/reference/) and [http://naltatis.github.io/jade-syntax-docs/](http://naltatis.github.io/jade-syntax-docs/).
 
 ### Environment Variables
 
