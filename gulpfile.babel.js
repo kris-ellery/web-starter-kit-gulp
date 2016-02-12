@@ -21,7 +21,6 @@ import pkg from './package.json'
 import postcss from 'gulp-postcss'
 import rename from 'gulp-rename'
 import sass from 'gulp-sass'
-import sasslint from 'gulp-sass-lint'
 import sequence from 'run-sequence'
 import uglify from 'gulp-uglify'
 
