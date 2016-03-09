@@ -244,7 +244,7 @@ gulp.task('misc', () => {
  * -----------------------------------------------------------------------------
  */
 
-gulp.task('scripts', [ 'scripts-lint' ], () => {
+gulp.task('scripts', () => {
   return gulp
 
     // Select files
