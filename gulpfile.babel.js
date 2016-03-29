@@ -378,7 +378,7 @@ gulp.task('views', () => {
 
     // Compile Jade
     .pipe(jade({
-      pretty: true,
+      pretty: (options.env === 'dev') ? true : false,
       data: {
         env: options.env
       }
