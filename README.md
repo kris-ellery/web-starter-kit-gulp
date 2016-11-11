@@ -2,7 +2,7 @@
 
 ![Alt text](http://www.kolszewski.com/images/vendors_v2.png)
 
-Web Starter Kit is an opinionated build automation for front-end web development based on [Gulp](http://gulpjs.com/), [Node](https://nodejs.org/), [NPM](https://www.npmjs.com/), [Bower](http://bower.io/), [Babel](https://babeljs.io/), [Sass](http://sass-lang.com/), and [Jade](http://jade-lang.com/).
+Web Starter Kit is an opinionated build automation for front-end web development based on [Gulp](http://gulpjs.com/), [Node](https://nodejs.org/), [NPM](https://www.npmjs.com/), [Bower](http://bower.io/), [Babel](https://babeljs.io/), [Sass](http://sass-lang.com/), and [Pug](https://pugjs.org/).
 
 *Note: Web Starter Kit is simply a guideline and it doesn't solve everything. It is up to you to modify whatever necessary to achieve your project goals.*
 
@@ -28,7 +28,7 @@ Web Starter Kit is an opinionated build automation for front-end web development
 1. [Styles](#styles)
     1. [BEM Structure](#bem-structure)
 1. [Views](#views)
-    1. [Jade Structure](#jade-structure)
+    1. [Pug Structure](#pug-structure)
     1. [Environment Variables](#environment-variables)
 
 ## Dependencies
@@ -154,12 +154,12 @@ Run a series of sub-tasks to generate final HTML files. See `./gulpfile.babel.js
 
 Run: `gulp views`
 
-### Jade Structure
+### Pug Structure
 
-Web Starter Kit follows an opinionated directory structure. To learn more about Jade go to [http://jade-lang.com/reference/](http://jade-lang.com/reference/) and [http://naltatis.github.io/jade-syntax-docs/](http://naltatis.github.io/jade-syntax-docs/).
+Web Starter Kit follows an opinionated directory structure. To learn more about Pug go to [https://pugjs.org/api/getting-started.html/](https://pugjs.org/api/getting-started.html/).
 
 ### Environment Variables
 
-Every Jade file has access to global `env` variable. You can use it to conditionally load unminified/minified assets. See `./src/views/includes/head.jade` as an example.
+Every Pug file has access to global `env` variable. You can use it to conditionally load unminified/minified assets. See `./src/views/includes/head.pug` as an example.
 
 [back to top](#table-of-contents)

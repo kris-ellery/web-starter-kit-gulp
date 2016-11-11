@@ -25,7 +25,7 @@
 
 # templates
 *.hbt text
-*.jade text
+*.pug text
 *.haml text
 *.hbs text
 *.dot text
