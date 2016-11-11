@@ -14,7 +14,8 @@ import eslint from 'gulp-eslint'
 import gulp from 'gulp'
 import header from 'gulp-header'
 import include from 'gulp-include'
-import jade from 'gulp-jade'
+import pug from 'gulp-pug'
+import puglint from 'gulp-pug-lint'
 import minimist from 'minimist'
 import nano from 'gulp-cssnano'
 import pkg from './package.json'
@@ -101,7 +102,7 @@ gulp.task('server', () => {
   gulp.watch('./src/scripts/**/*.js', [ 'scripts' ])
   gulp.watch('./src/styles/**/*.scss', [ 'styles' ])
   gulp.watch('./src/vendors/*.js', [ 'vendors' ])
-  gulp.watch('./src/views/**/*.jade', [ 'views' ])
+  gulp.watch('./src/views/**/*.pug', [ 'views' ])
 })
 
 /**
@@ -374,10 +375,13 @@ gulp.task('views', () => {
   return gulp
 
     // Select files
-    .src(path.src + '/views/site/**/*.jade')
+    .src(path.src + '/views/site/**/*.pug')
 
-    // Compile Jade
-    .pipe(jade({
+    // Lint Pug
+    .pipe(puglint())
+
+    // Compile Pug
+    .pipe(pug({
       pretty: (options.env === 'dev') ? true : false,
       data: {
         env: options.env
