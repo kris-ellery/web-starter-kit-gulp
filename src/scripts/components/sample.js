@@ -1,85 +1,74 @@
-;(function($, window, document, undefined) {
-
-  'use strict';
-
+(($, window, document) => {
   /**
-   * This is a description for MyNamespace object.
+   * This is a description for Module object.
    *
-   * @namespace MyNamespace
+   * @namespace Module
    * @author Ultron
    */
 
-  let MyNamespace = {
+  const Module = {
 
     /**
      * Initialize object
      * @function init
-     * @memberof MyNamespace
+     * @memberof Module
      */
 
     init() {
-
-      this._cache();
-      this._events();
-
-    }, // init()
+      this.cache();
+      this.events();
+    },
 
     /**
      * Cache reusable data
      * @function cache
-     * @memberof MyNamespace
+     * @memberof Module
      */
 
-    _cache() {
-
+    cache() {
       this.$win = $(window);
-      this.$html = $('html');
-
-    }, // _cache()
+      this.$doc = $(document);
+    },
 
     /**
      * Attach event listeners
-     * @function _events
-     * @memberof MyNamespace
+     * @function events
+     * @memberof Module
      */
 
-    _events() {
-
-      this.$html.on(
-        'click.ui.some_namespace',
+    events() {
+      this.$doc.on(
+        'click.ui.custom_namespace',
         '.js-trigger',
-        event => this._myClickHandler(event)
+        event => this.myClickHandler(event),
       );
 
-      this.$win.on(
-        'resize.ui.some_namespace',
-        event => this._myResizeHandler(event)
+      this.$doc.on(
+        'resize.ui.custom_namespace',
+        event => this.myResizeHandler(event),
       );
-
-    }, // _events()
+    },
 
     /**
      * Handle click event
-     * @function _myClickHandler
-     * @memberof MyNamespace
+     * @function myClickHandler
+     * @memberof Module
      */
 
-    _myClickHandler() {
-      console.log('Click handler');
-    }, // _myClickHandler()
+    myClickHandler() {
+      console.log('Click handler'); // eslint-disable-line
+    },
 
     /**
      * Handle `window` resize event
-     * @function _myResizeHandler
-     * @memberof MyNamespace
+     * @function myResizeHandler
+     * @memberof Module
      */
 
-    _myResizeHandler() {
-      console.log('Resize handler');
-    }, // _myResizeHandler()
+    myResizeHandler() {
+      console.log('Resize handler'); // eslint-disable-line
+    },
+  };
 
-  }; // MyNamespace
-
-  MyNamespace.init();
-
+  Module.init();
 })(jQuery, window, document);
