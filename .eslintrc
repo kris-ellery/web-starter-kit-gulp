@@ -1,3 +1,9 @@
 {
-  "parser": "babel-eslint"
+  "extends": "airbnb-base",
+  "globals": {
+    "$",
+    "jQuery",
+    "document",
+    "window"
+  }
 }

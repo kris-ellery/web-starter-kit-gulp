@@ -1,1 +1,1 @@
-//=include ../../bower_components/jquery/dist/jquery.js
+//=include jquery/dist/jquery.js
