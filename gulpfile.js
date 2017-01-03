@@ -55,7 +55,7 @@ gulp.src = function onError(...args) {
   return gulpSrc
     .apply(gulp, args)
     // Catch errors
-    .pipe(plumber((error) => {
+    .pipe(plumber(function onError(error) {
       gutil.log(gutil.colors.red(`Error (${error.plugin}):${error.message}`));
       this.emit('end');
     }));
@@ -283,14 +283,17 @@ gulp.task('styles', () => gulp
  */
 
 gulp.task('vendors', () => gulp
-    // Select files
-    .src(`${path.src}/vendors/*.js`)
-    // Concatenate includes
-    .pipe(include({
-      includePaths: [`${__dirname}/bower_components`],
-    }))
-    // Save files
-    .pipe(gulp.dest(`${path.build}/vendors`))
+  // Select files
+  .src(`${path.src}/vendors/*.js`)
+  // Concatenate includes
+  .pipe(include({
+    includePaths: [
+      `${__dirname}/bower_components`,
+      `${__dirname}/node_modules`,
+    ],
+  }))
+  // Save files
+  .pipe(gulp.dest(`${path.build}/vendors`))
 );
 
 
