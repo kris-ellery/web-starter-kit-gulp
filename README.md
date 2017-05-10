@@ -1,8 +1,6 @@
 # Web Starter Kit with Gulp
 
-![Alt text](http://www.kolszewski.com/images/vendors_v2.png)
-
-Web Starter Kit is an opinionated build automation for front-end web development based on [Gulp](http://gulpjs.com/), [Node](https://nodejs.org/), [NPM](https://www.npmjs.com/), [Babel](https://babeljs.io/), [Sass](http://sass-lang.com/), and [Pug](https://pugjs.org/).
+Web Starter Kit is an opinionated build automation for front-end web development based on [Gulp](http://gulpjs.com/), [Node](https://nodejs.org/), [NPM](https://www.npmjs.com/), [Babel](https://babeljs.io/), [Sass](http://sass-lang.com/) with [inuitcss](https://github.com/inuitcss/inuitcss), and [Pug](https://pugjs.org/).
 
 *Note: Web Starter Kit is simply a guideline and it doesn't solve everything. It is up to you to modify whatever necessary to achieve your project goals.*
 
