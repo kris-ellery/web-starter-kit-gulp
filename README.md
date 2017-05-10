@@ -33,9 +33,9 @@ Web Starter Kit is an opinionated build automation for front-end web development
 
 ## Dependencies
 
-Run: `npm cache clear && npm i && bower cache clean && bower install`
+Run: `npm cache clear && npm i`
 
-*Note: Before you can install Web Start Kit dependencies, you will need to install [Gulp](http://gulpjs.com/), [Node](https://nodejs.org/), [NPM](https://www.npmjs.com/), and [Bower](http://bower.io/).*
+*Note: Before you can install Web Start Kit dependencies, you will need to install [Gulp](http://gulpjs.com/), [Node](https://nodejs.org/), [NPM](https://www.npmjs.com/).*
 
 [back to top](#table-of-contents)
 
@@ -118,7 +118,7 @@ Run: `gulp misc`
 
 ### Vendors
 
-Bundle vendor files to `./build/vendors`. You can install new client-side vendors using Bower, then reference appropriate files in `./src/vendors/bundle.js` and `./src/vendors/bundle.min.js`. Web Starter Kit comes with jQuery example.
+Bundle vendor files to `./build/vendors`. You can install new client-side vendors using npm, then reference appropriate files in `./src/vendors/bundle.js` and `./src/vendors/bundle.min.js`. Web Starter Kit comes with jQuery example.
 
 Run: `gulp vendors`
 
