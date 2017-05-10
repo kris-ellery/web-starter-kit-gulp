@@ -39,7 +39,7 @@ Run: `npm cache clear && npm i`
 
 ## Build
 
-Generate a fresh build of your project. Task will run several individual tasks on files within `./src` and then output them to `./build`.
+Generate a fresh build of your project. Task will run several individual tasks on files within `./src` and then output them to `./dist`.
 
 Run: `gulp build`
 
@@ -49,15 +49,15 @@ You can specify which environment you want to build. If you do not pass `env` as
 
 #### Development
 
-Run: `gulp build --env=dev`
+Run: `npm run build --env=dev` or `npm run dev`
 
 #### Stage
 
-Run: `gulp build --env=stage`
+Run: `gulp build --env=stage` or `npm run stage`
 
 #### Production
 
-Run: `gulp build --env=prod`
+Run: `gulp build --env=prod` or `npm run prod`
 
 [back to top](#table-of-contents)
 
@@ -80,43 +80,43 @@ You can modify port, proxy, and many other settings in `./gulpfile.babel.js`. Fo
 
 ## Assets
 
-Run several individual tasks to copy static files from `./src` to `./build`.
+Run several individual tasks to copy static files from `./src` to `./dist`.
 
 Run: `gulp assets`
 
 ### Data
 
-Copy data files to `./build/data`.
+Copy data files to `./dist/data`.
 
 Run: `gulp data`
 
 ### Fonts
 
-Copy font files to `./build/fonts`.
+Copy font files to `./dist/fonts`.
 
 Run: `gulp fonts`
 
 ### Images
 
-Copy images to `./build/images`. As a personal preference Web Starter Kit doesn't use automated image optimization. It is strongly recommended to use services like [TinyPNG](https://tinypng.com/) and [TinyJPG](https://tinyjpg.com/) to optimize images manually.
+Copy images to `./dist/images`. As a personal preference Web Starter Kit doesn't use automated image optimization. It is strongly recommended to use services like [TinyPNG](https://tinypng.com/) and [TinyJPG](https://tinyjpg.com/) to optimize images manually.
 
 Run: `gulp images`
 
 ### Media
 
-Copy media files to `./build/media`.
+Copy media files to `./dist/media`.
 
 Run: `gulp media`
 
 ### Miscellaneous
 
-Copy miscellaneous files, such as `.htaccess` or `robots.txt`, to the root of `./build`. If your project require custom settings per environment, then you can save individual files into appropriate directory within `./src/misc`.
+Copy miscellaneous files, such as `.htaccess` or `robots.txt`, to the root of `./dist`. If your project require custom settings per environment, then you can save individual files into appropriate directory within `./src/misc`.
 
 Run: `gulp misc`
 
 ### Vendors
 
-Bundle vendor files to `./build/vendors`. You can install new client-side vendors using npm, then reference appropriate files in `./src/vendors/bundle.js` and `./src/vendors/bundle.min.js`. Web Starter Kit comes with jQuery example.
+Bundle vendor files to `./dist/vendors`. You can install new client-side vendors using npm, then reference appropriate files in `./src/vendors/bundle.js` and `./src/vendors/bundle.min.js`. Web Starter Kit comes with jQuery example.
 
 Run: `gulp vendors`
 
@@ -126,7 +126,7 @@ Run: `gulp vendors`
 
 Run a series of sub-tasks to generate final JavaScript files. See `./gulpfile.babel.js` for reference.
 
-*Note: Each file on the root of `./src/scripts` will be compiled to its own file in `./build/scripts`. Each file can have own includes, just like Sass with `@import` functionality. See `./src/scripts/main.js` as an example.*
+*Note: Each file on the root of `./src/scripts` will be compiled to its own file in `./dist/scripts`. Each file can have own includes, just like Sass with `@import` functionality. See `./src/scripts/main.js` as an example.*
 
 Run: `gulp scripts`
 
@@ -136,7 +136,7 @@ Run: `gulp scripts`
 
 Run a series of sub-tasks to generate final CSS files. See `./gulpfile.babel.js` for reference.
 
-*Note: Each file on the root of `./src/styles` will be compiled to its own file in `./build/styles`.*
+*Note: Each file on the root of `./src/styles` will be compiled to its own file in `./dist/styles`.*
 
 Run: `gulp styles`
 

@@ -18,6 +18,12 @@
     "type": "git",
     "url": "git@github.com:USER/REPOSITORY.git"
   },
+  "scripts": {
+    "gulp": "gulp",
+    "dev": "gulp build --env=dev",
+    "stage": "gulp build --env=stage",
+    "prod": "gulp build --env=prod"
+  },
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^7.0.1",
