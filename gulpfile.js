@@ -28,7 +28,7 @@ const gutil = require('gulp-util');
  */
 
 const path = {
-  build: 'build',
+  build: 'dist',
   src: 'src',
 };
 
