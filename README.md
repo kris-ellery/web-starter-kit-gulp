@@ -49,7 +49,7 @@ You can specify which environment you want to build. If you do not pass `env` as
 
 #### Development
 
-Run: `npm run build --env=dev` or `npm run dev`
+Run: `gulp build --env=dev` or `npm run dev`
 
 #### Stage
 
