@@ -1,8 +1,6 @@
 # Web Starter Kit with Gulp
 
-![Alt text](http://www.kolszewski.com/images/vendors_v2.png)
-
-Web Starter Kit is an opinionated build automation for front-end web development based on [Gulp](http://gulpjs.com/), [Node](https://nodejs.org/), [NPM](https://www.npmjs.com/), [Bower](http://bower.io/), [Babel](https://babeljs.io/), [Sass](http://sass-lang.com/), and [Pug](https://pugjs.org/).
+Web Starter Kit is an opinionated build automation for front-end web development based on [Gulp](http://gulpjs.com/), [Node](https://nodejs.org/), [NPM](https://www.npmjs.com/), [Babel](https://babeljs.io/), [Sass](http://sass-lang.com/) with [inuitcss](https://github.com/inuitcss/inuitcss), and [Pug](https://pugjs.org/).
 
 *Note: Web Starter Kit is simply a guideline and it doesn't solve everything. It is up to you to modify whatever necessary to achieve your project goals.*
 
@@ -33,15 +31,15 @@ Web Starter Kit is an opinionated build automation for front-end web development
 
 ## Dependencies
 
-Run: `npm cache clear && npm i && bower cache clean && bower install`
+Run: `npm cache clear && npm i`
 
-*Note: Before you can install Web Start Kit dependencies, you will need to install [Gulp](http://gulpjs.com/), [Node](https://nodejs.org/), [NPM](https://www.npmjs.com/), and [Bower](http://bower.io/).*
+*Note: Before you can install Web Start Kit dependencies, you will need to install [Gulp](http://gulpjs.com/), [Node](https://nodejs.org/), [NPM](https://www.npmjs.com/).*
 
 [back to top](#table-of-contents)
 
 ## Build
 
-Generate a fresh build of your project. Task will run several individual tasks on files within `./src` and then output them to `./build`.
+Generate a fresh build of your project. Task will run several individual tasks on files within `./src` and then output them to `./dist`.
 
 Run: `gulp build`
 
@@ -51,15 +49,15 @@ You can specify which environment you want to build. If you do not pass `env` as
 
 #### Development
 
-Run: `gulp build --env=dev`
+Run: `gulp build --env=dev` or `npm run dev`
 
 #### Stage
 
-Run: `gulp build --env=stage`
+Run: `gulp build --env=stage` or `npm run stage`
 
 #### Production
 
-Run: `gulp build --env=prod`
+Run: `gulp build --env=prod` or `npm run prod`
 
 [back to top](#table-of-contents)
 
@@ -82,43 +80,43 @@ You can modify port, proxy, and many other settings in `./gulpfile.babel.js`. Fo
 
 ## Assets
 
-Run several individual tasks to copy static files from `./src` to `./build`.
+Run several individual tasks to copy static files from `./src` to `./dist`.
 
 Run: `gulp assets`
 
 ### Data
 
-Copy data files to `./build/data`.
+Copy data files to `./dist/data`.
 
 Run: `gulp data`
 
 ### Fonts
 
-Copy font files to `./build/fonts`.
+Copy font files to `./dist/fonts`.
 
 Run: `gulp fonts`
 
 ### Images
 
-Copy images to `./build/images`. As a personal preference Web Starter Kit doesn't use automated image optimization. It is strongly recommended to use services like [TinyPNG](https://tinypng.com/) and [TinyJPG](https://tinyjpg.com/) to optimize images manually.
+Copy images to `./dist/images`. As a personal preference Web Starter Kit doesn't use automated image optimization. It is strongly recommended to use services like [TinyPNG](https://tinypng.com/) and [TinyJPG](https://tinyjpg.com/) to optimize images manually.
 
 Run: `gulp images`
 
 ### Media
 
-Copy media files to `./build/media`.
+Copy media files to `./dist/media`.
 
 Run: `gulp media`
 
 ### Miscellaneous
 
-Copy miscellaneous files, such as `.htaccess` or `robots.txt`, to the root of `./build`. If your project require custom settings per environment, then you can save individual files into appropriate directory within `./src/misc`.
+Copy miscellaneous files, such as `.htaccess` or `robots.txt`, to the root of `./dist`. If your project require custom settings per environment, then you can save individual files into appropriate directory within `./src/misc`.
 
 Run: `gulp misc`
 
 ### Vendors
 
-Bundle vendor files to `./build/vendors`. You can install new client-side vendors using Bower, then reference appropriate files in `./src/vendors/bundle.js` and `./src/vendors/bundle.min.js`. Web Starter Kit comes with jQuery example.
+Bundle vendor files to `./dist/vendors`. You can install new client-side vendors using npm, then reference appropriate files in `./src/vendors/bundle.js` and `./src/vendors/bundle.min.js`. Web Starter Kit comes with jQuery example.
 
 Run: `gulp vendors`
 
@@ -128,7 +126,7 @@ Run: `gulp vendors`
 
 Run a series of sub-tasks to generate final JavaScript files. See `./gulpfile.babel.js` for reference.
 
-*Note: Each file on the root of `./src/scripts` will be compiled to its own file in `./build/scripts`. Each file can have own includes, just like Sass with `@import` functionality. See `./src/scripts/main.js` as an example.*
+*Note: Each file on the root of `./src/scripts` will be compiled to its own file in `./dist/scripts`. Each file can have own includes, just like Sass with `@import` functionality. See `./src/scripts/main.js` as an example.*
 
 Run: `gulp scripts`
 
@@ -138,7 +136,7 @@ Run: `gulp scripts`
 
 Run a series of sub-tasks to generate final CSS files. See `./gulpfile.babel.js` for reference.
 
-*Note: Each file on the root of `./src/styles` will be compiled to its own file in `./build/styles`.*
+*Note: Each file on the root of `./src/styles` will be compiled to its own file in `./dist/styles`.*
 
 Run: `gulp styles`
 

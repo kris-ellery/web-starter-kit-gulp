@@ -1,5 +1,6 @@
 # App ignores
 build
+dist
 .publish
 
 # Created by https://www.gitignore.io/api/sass,osx,windows,linux,node,bower
@@ -112,12 +113,3 @@ jspm_packages
 
 # Output of 'npm pack'
 *.tgz
-
-# Yarn Integrity file
-.yarn-integrity
-
-### Bower ###
-bower_components
-.bower-cache
-.bower-registry
-.bower-tmp
